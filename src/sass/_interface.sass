@@ -1,0 +1,69 @@
+
+body
+    font-family: sans-serif
+    color: $text-color
+    box-sizing: border-box
+
+img 
+    max-width: 100%
+
+.container
+    width: 1170px
+    margin: 0 auto
+
+
+
+.button
+    border-radius: 10px
+    padding: 18px 30px
+    background-color: $main-color  
+    border: none
+    outline: none
+    +bold
+    &:hover
+        cursor: pointer
+        background-color: lighten($main-color, 10%)
+
+.section
+    padding: 70px 0 90px 0
+    &-title
+      color: $text-color
+      +bold
+      text-align: center
+    &-subtitle
+      color: #333333
+      +bold
+.input
+  padding-left: 26px
+  margin-bottom: 30px
+  width: 240px
+  height: 65px
+  border-radius: 10px
+  border: 1px solid #dddddd
+  box-sizing: border-box
+  outline: none
+  +reg
+    
+.phone-number
+  text-decoration: none 
+  color: $text-color
+  +bold
+        
+
+@media (max-width: 1200px)
+  .container
+      width: 95% 
+
+@media (max-width: 768px)
+    .container
+        max-width:  580px
+        width: 84% 
+         
+@media (max-width: 567px)
+    .container
+        width: 278px
+
+  
+.input.invalid
+  border: 1px solid red
+
